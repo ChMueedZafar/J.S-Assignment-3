@@ -10,16 +10,25 @@ let str2 = "Zafar"
 const newstr = str1.concat(str2)
 console.log(newstr);
 // Question no 3
-let string = "e"
+let string = " "
 if (string){
-    console.log("string is empty" );
+    console.log("string is not empty" );
 }
 else{
-    console.log("string is not empty")
+    console.log("string is empty")
 }
 // Question no 4
-let strg= "mueed"
-function (){
-    return countchar
+function countVowels(str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
 }
-console.log(vowalwords.strg);
+// Example usage:
+const inputString = "Hello, how are you?";
+console.log("Number of vowels:", countVowels(inputString));
+
