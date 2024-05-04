@@ -31,4 +31,12 @@ function countVowels(str) {
 // Example usage:
 const inputString = "Hello, how are you?";
 console.log("Number of vowels:", countVowels(inputString));
+// Question no 5
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+const originalstr = "mueed";
+const reversedstr = reverseString(originalstr);
+console.log(reversedstr);
 
