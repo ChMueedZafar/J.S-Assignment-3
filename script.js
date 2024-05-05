@@ -39,4 +39,15 @@ function reverseString(str) {
 const originalstr = "mueed";
 const reversedstr = reverseString(originalstr);
 console.log(reversedstr);
-
+// Question no 6
+function isPalindrome(str) {
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+    const reversedStr = cleanedStr.split('').reverse().join('');
+    return cleanedStr === reversedStr;
+}
+const stringToCheck = "A man a plan a canal Panama";
+if (isPalindrome(stringToCheck)) {
+    console.log(`${stringToCheck} is a palindrome.`);
+} else {
+    console.log(`${stringToCheck} is not a palindrome.`);
+}
