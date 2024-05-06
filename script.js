@@ -51,3 +51,30 @@ if (isPalindrome(stringToCheck)) {
 } else {
     console.log(`${stringToCheck} is not a palindrome.`);
 }
+// Question 7 
+let originalstring = "abdul mueed";
+let uppercasestring = originalstring.toUpperCase();
+console.log(uppercasestring);
+// Question no 8
+let str4 = "mueed"
+let firstchar = str4.charAt(0);
+console.log(firstchar);
+// Question no 9
+let str5 = "mueed"
+let replacestr5 = str5.replace("mueed","zafar")
+console.log(replacestr5);
+// Question no 10
+let str6 ="     mueed      ";
+let trimedstr6 = str6.trim();
+console.log(trimedstr6);
+// Question no 11
+let str7 = "mueed 5588 zafar"
+let count =str7.split(" ").length
+console.log(count);
+// Question no 12
+const mystring = "12345";
+function isnumericstring(mystring){
+    return / ^[0-9]+$/.test(mystring);
+}
+
+console.log(isnumericstring(mystring));
