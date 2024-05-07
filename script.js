@@ -76,5 +76,8 @@ const mystring = "12345";
 function isnumericstring(mystring){
     return / ^[0-9]+$/.test(mystring);
 }
-
 console.log(isnumericstring(mystring));
+// Question no 13
+let email = "mueed@email.com";
+let validemail = email.validateEmail;
+console.log(validemail(email));
