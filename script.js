@@ -78,6 +78,21 @@ function isnumericstring(mystring){
 }
 console.log(isnumericstring(mystring));
 // Question no 13
-let email = "mueed@email.com";
-let validemail = email.validateEmail;
-console.log(validemail(email));
+function isValidEmail(email) {
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+}
+var email = "mueed@example.com";
+if (isValidEmail(email)) {
+    console.log("Valid email address");
+} else {
+    console.log("Invalid email address");
+}
+// Question no 14
+function extractdomain(url){
+    let urlobject = new URL(url)
+    return urlobject.hostname
+}
+let url = "https://www.mueed.com/path/to/resource";
+let domain = extractdomain(url);
+console.log(domain);
