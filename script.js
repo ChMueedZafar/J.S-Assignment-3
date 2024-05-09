@@ -28,7 +28,6 @@ function countVowels(str) {
     }
     return count;
 }
-// Example usage:
 const inputString = "Hello, how are you?";
 console.log("Number of vowels:", countVowels(inputString));
 // Question no 5
